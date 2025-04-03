@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - AllProcessorsTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>AllProcessorsTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/traffic.project.html">traffic.project</a> &gt; AllProcessorsTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.837s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+<li>
+<a href="#">Standard error</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">directProcessorTest()</td>
+<td class="success">0.538s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">hadoopProcessorTest()</td>
+<td class="success">0.129s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">kafkaProcessorTest()</td>
+<td class="success">0.009s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">rabbitProcessorTest()</td>
+<td class="success">0.008s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">redisCacheProcessorTest()</td>
+<td class="success">0.153s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+03:52:17.134 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [traffic.project.AllProcessorsTest]: AllProcessorsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+03:52:17.187 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration traffic.project.ProjectApplication for test class traffic.project.AllProcessorsTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.4)
+
+2025-04-04T03:52:17.393+09:00  INFO 34699 --- [project] [    Test worker] traffic.project.AllProcessorsTest        : Starting AllProcessorsTest using Java 21.0.2 with PID 34699 (started by annhyeonjune in /Users/annhyeonjune/Desktop/TrafficProject/project)
+2025-04-04T03:52:17.394+09:00  INFO 34699 --- [project] [    Test worker] traffic.project.AllProcessorsTest        : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2025-04-04T03:52:17.733+09:00  INFO 34699 --- [project] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-04-04T03:52:17.735+09:00  INFO 34699 --- [project] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-04-04T03:52:17.753+09:00  INFO 34699 --- [project] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2025-04-04T03:52:18.066+09:00  INFO 34699 --- [project] [    Test worker] t.project.tool.hadoop.LocalHdfsStarter   : &#x1f9e9; HDFS Namenode, Datanode 실행 시도
+2025-04-04T03:52:18.081+09:00  INFO 34699 --- [project] [    Test worker] t.project.tool.hadoop.LocalHdfsStarter   : ✅ HDFS 프로세스 시작됨
+2025-04-04T03:52:19.360+09:00  INFO 34699 --- [project] [    Test worker] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-gpt-benchmark-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = gpt-benchmark-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-04-04T03:52:19.387+09:00  INFO 34699 --- [project] [    Test worker] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-04-04T03:52:19.474+09:00  INFO 34699 --- [project] [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+2025-04-04T03:52:19.475+09:00  INFO 34699 --- [project] [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+2025-04-04T03:52:19.475+09:00  INFO 34699 --- [project] [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1743706339474
+2025-04-04T03:52:19.476+09:00  INFO 34699 --- [project] [    Test worker] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-gpt-benchmark-group-1, groupId=gpt-benchmark-group] Subscribed to topic(s): gpt-prompt-topic
+2025-04-04T03:52:19.481+09:00  INFO 34699 --- [project] [    Test worker] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-04-04T03:52:19.511+09:00  INFO 34699 --- [project] [    Test worker] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7d30007d:0/SimpleConnection@48bab2c6 [delegate=amqp://guest@127.0.0.1:5672/, localPort=65013]
+2025-04-04T03:52:19.541+09:00  INFO 34699 --- [project] [    Test worker] traffic.project.AllProcessorsTest        : Started AllProcessorsTest in 2.291 seconds (process running for 2.837)
+2025-04-04T03:52:19.668+09:00  INFO 34699 --- [project] [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-gpt-benchmark-group-1, groupId=gpt-benchmark-group] Cluster ID: 4oPfpfxXQSKaAwiYCsE8FA
+2025-04-04T03:52:19.669+09:00  INFO 34699 --- [project] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gpt-benchmark-group-1, groupId=gpt-benchmark-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-04-04T03:52:19.672+09:00  INFO 34699 --- [project] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gpt-benchmark-group-1, groupId=gpt-benchmark-group] (Re-)joining group
+2025-04-04T03:52:19.687+09:00  INFO 34699 --- [project] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gpt-benchmark-group-1, groupId=gpt-benchmark-group] Request joining group due to: need to re-join with the given member-id: consumer-gpt-benchmark-group-1-48e2e6e4-2924-4c4f-bcd4-199c398baf5f
+2025-04-04T03:52:19.688+09:00  INFO 34699 --- [project] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gpt-benchmark-group-1, groupId=gpt-benchmark-group] (Re-)joining group
+2025-04-04T03:52:20.028+09:00  INFO 34699 --- [project] [    Test worker] t.p.tool.direct.DirectCallProcessor      : [DirectGPTCall : 단순 호출] content 길이: 25, 처리 시간 측정 중...
+2025-04-04T03:52:20.084+09:00  INFO 34699 --- [project] [    Test worker] t.p.tool.direct.DirectCallProcessor      : [DirectGPTCall : 단순 호출] 처리 완료 - 처리 시간: 56ms
+2025-04-04T03:52:20.084+09:00  INFO 34699 --- [project] [    Test worker] traffic.project.AllProcessorsTest        : Direct processor 테스트 완료
+2025-04-04T03:52:20.194+09:00  WARN 34699 --- [project] [    Test worker] o.apache.hadoop.util.NativeCodeLoader    : Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-04-04T03:52:20.218+09:00 ERROR 34699 --- [project] [    Test worker] t.project.tool.hadoop.HadoopProcessor    : [HadoopProcessor : HDFS 저장] 처리 실패 (126ms): No FileSystem for scheme &quot;hdfs&quot;
+2025-04-04T03:52:20.218+09:00  INFO 34699 --- [project] [    Test worker] traffic.project.AllProcessorsTest        : Hadoop processor 테스트 완료
+2025-04-04T03:52:20.372+09:00  INFO 34699 --- [project] [    Test worker] t.p.tool.redis.RedisCacheProcessor       : [RedisCacheProcessor : 분산캐싱] 총 처리 시간: 151ms
+2025-04-04T03:52:20.373+09:00  INFO 34699 --- [project] [    Test worker] traffic.project.AllProcessorsTest        : Redis processor 테스트 완료
+2025-04-04T03:52:20.381+09:00  INFO 34699 --- [project] [    Test worker] t.project.tool.Rabbit.RabbitProcessor    : [RabbitProcessor : 비동기] 메시지 전송 완료 - 처리 시간: 6ms
+2025-04-04T03:52:20.382+09:00  INFO 34699 --- [project] [    Test worker] traffic.project.AllProcessorsTest        : RabbitMQ processor 테스트 완료
+2025-04-04T03:52:20.389+09:00  INFO 34699 --- [project] [    Test worker] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = project-producer-1
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = none
+	compression.zstd.level = 3
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class com.fasterxml.jackson.databind.ser.std.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class com.fasterxml.jackson.databind.ser.std.StringSerializer
+
+2025-04-04T03:52:20.390+09:00  INFO 34699 --- [project] [    Test worker] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-04-04T03:52:20.391+09:00  INFO 34699 --- [project] [    Test worker] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=project-producer-1] Closing the Kafka producer with timeoutMillis = 0 ms.
+2025-04-04T03:52:20.391+09:00  INFO 34699 --- [project] [    Test worker] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2025-04-04T03:52:20.391+09:00  INFO 34699 --- [project] [    Test worker] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-04-04T03:52:20.391+09:00  INFO 34699 --- [project] [    Test worker] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-04-04T03:52:20.391+09:00  INFO 34699 --- [project] [    Test worker] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2025-04-04T03:52:20.391+09:00  INFO 34699 --- [project] [    Test worker] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for project-producer-1 unregistered
+2025-04-04T03:52:20.391+09:00 ERROR 34699 --- [project] [    Test worker] t.project.tool.kafka.KafkaProcessor      : [KafkaProcessor : Kafka 전송] 처리 실패 (7ms): Failed to construct kafka producer
+2025-04-04T03:52:20.392+09:00  INFO 34699 --- [project] [    Test worker] traffic.project.AllProcessorsTest        : Kafka processor 테스트 완료
+</pre>
+</span>
+</div>
+<div class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (/Users/annhyeonjune/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.15.11/a38b16385e867f59a641330f0362ebe742788ed8/byte-buddy-agent-1.15.11.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.13</a> at 2025. 4. 4. 오전 3:52:22</p>
+</div>
+</div>
+</body>
+</html>

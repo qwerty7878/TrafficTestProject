@@ -1,0 +1,10 @@
+logging:
+  level:
+    root: info
+    org.apache.kafka: warn
+    org.springframework: warn
+    org.springframework.boot.autoconfigure: error
+    org.springframework.test.context: error
+    org.apache.hadoop: warn
+    org.springframework.amqp: warn
+    com.project.traffic_test: info
