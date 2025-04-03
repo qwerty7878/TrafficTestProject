@@ -10,21 +10,20 @@ spring:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
 
-  redis:
-    host: localhost
-    port: 6379
+  data:
+    redis:
+      host: localhost
+      port: 6379
 
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
+rabbitmq:
+  host: localhost
+  port: 5672
+  username: guest
+  password: guest
+  queue: gpt-queue
 
 kafka:
   topic: gpt-prompt-topic
-
-rabbitmq:
-  queue: gpt-queue
 
 hadoop:
   hdfs:
