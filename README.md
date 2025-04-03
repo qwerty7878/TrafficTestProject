@@ -28,4 +28,4 @@ ChatGPT로부터 받은 응답을 다양한 메시징/저장 시스템(Redis, Ka
 <img width="1395" alt="Image" src="https://github.com/user-attachments/assets/d57a3150-cc48-441a-8e0e-88530e7cbcef" />
 
 ### 통합테스트 결과 : 
-<img width="1390" alt="Image" src="https://github.com/user-attachments/assets/cf192249-6b46-41f1-9b80-7203c7d34782" />
+<img width="1440" alt="Image" src="https://github.com/user-attachments/assets/68cba415-b148-440c-a4ee-012a379c99ee" />
